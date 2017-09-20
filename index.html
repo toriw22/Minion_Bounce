@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<title>Minion Counter Game</title>
+</head>
+<body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div id="boxScore">
+	<h3>Your Score</h3><h1><span id="userScore"></span></h1>
+</div>
+
+<div id="boxGoals">
+	<h2>Number to Guess:</h2><h1><span id="computerNumber"></span></h1>
+	<button id="restart" onclick= "startGame()">Restart</button>
+</div>
+
+<div id="boxWL">
+	<h2>Wins: <span id="wins"></span></h2>
+	<h2>Losses: <span id= "losses"></span></h2>
+	<a href="https://youtu.be/j8EFVDq0crs" target="_blank"><button id="fluffy">So Fluffy!</button></a>
+</div>
+
+<div id=boxBody>
+
+
+<img id= "minion1" class= "minion" src="assets/images/minion1.png" alt= "minion" value="1">
+<img id= "minion2" class= "minion" src="assets/images/minion2.png" alt= "minion" value="2">
+<img id= "minion3" class= "minion" src="assets/images/minion3.png" alt= "minion" value="3">
+<img id= "minion4" class= "minion" src="assets/images/minion4.png" alt= "minion" value="4"><br>
+</div>
+
+
+
+<script type="text/javascript" src="assets/javascript/game.js">
+
+</script>
+
+</body>
+</html>
