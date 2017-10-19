@@ -1,6 +1,6 @@
 # Minion_Bounce
 
-The player is given a goal number. In order to reach that number, the player must click on the minions. Each minion has randomly assigned numerical values between 1 and 10.
+The app produces a random goal number. In order to reach that number, the player must click on the minions to add to their score. 
 
 How to play:
 
