@@ -10,9 +10,10 @@ body {
 
 }
 
-#boxBody {
+.jumbotron {
 	background-image: url("../images/spacekiller.png");
 	background-repeat: no-repeat;
+	background-size:100%;
 	width: 816px;
 	height: 730px;
 	position:absolute;
@@ -28,7 +29,7 @@ body {
     width: 90px;
     height: 145px;
     top: 341px;
-    left: 715px;
+    left: 362px;
 	z-index: 4;
 }
 
@@ -37,7 +38,7 @@ body {
 	background-color:white;
 	position: absolute;
 	top: 100px;
-	left:12.5%;
+	left:-22%;
 	text-align: center;
 	width: 150px;
     height: 400px;
@@ -56,7 +57,7 @@ body {
 	background-color:white;
 	position: absolute;
 	top: 100px;
-	right:13%;
+	right:-22%;
 	text-align: center;
 	width: 150px;
     height: 400px;
