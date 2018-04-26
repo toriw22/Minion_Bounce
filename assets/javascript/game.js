@@ -1,39 +1,33 @@
 var computerNumber = Math.floor(Math.random()*(100-50)+49);
-
 $("#computerNumber").text(computerNumber);
 
 var userScore = 0;
-
 $("#userScore").text(userScore);
 
-var userOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 var wins = 0;
-
 $("#wins").text(wins);
 
 var losses = 0;
-
 $("#losses").text(losses);
 
+var minionValue1;
+var minionValue2;
+var minionValue3;
+var minionValue4;
 
 function startGame () {
 	alert("Try to reach the \"Number to Guess\" value by clicking the minions below. Each minion has a random value from 1-10. If you go over the \"Number to Guess\", you lose!")
-	minionValue1 = Math.floor(Math.random()*10+1);
-	$(this).attr("minionValue1");
-	minionValue1 = parseInt(minionValue1);
 
-	minionValue2 = Math.floor(Math.random()*10+1);
-	$(this).attr("minionValue2");
-	minionValue2 = parseInt(minionValue2);
+	function randomVal() {
+		var randomize = Math.floor(Math.random()*10+1);
+		randomize = parseInt(randomize);
+		return randomize;
+	}
 
-	minionValue3 = Math.floor(Math.random()*10+1);
-	$(this).attr("minionValue3");
-	minionValue3 = parseInt(minionValue3);
-
-	minionValue4 = Math.floor(Math.random()*10+1);
-	$(this).attr("minionValue4");
-	minionValue4 = parseInt(minionValue4);
+	minionValue1 = randomVal ();
+	minionValue2 = randomVal ();
+	minionValue3 = randomVal ();
+	minionValue4 = randomVal ();
 
 	userScore = 0;
 
