@@ -18,6 +18,7 @@ var minionValue4;
 function startGame () {
 	alert("Try to reach the \"Number to Guess\" value by clicking the minions below. Each minion has a random value from 1-10. If you go over the \"Number to Guess\", you lose!")
 
+// calculate random values for each minion
 	function randomVal() {
 		var randomize = Math.floor(Math.random()*10+1);
 		randomize = parseInt(randomize);
@@ -41,109 +42,65 @@ function startGame () {
 
 	$("#losses").text(losses);
 
-
 }
 
 startGame();
 
+function keepScore (minionValue, num1, num2) { 
+
+// adding to score
+	userScore += minionValue;
+	$("#userScore").text(userScore);
+
+
+// adding to win/loss if player wins or looses
+	if (userScore === computerNumber) {
+		wins++;
+		alert("You Win!! ={D");
+		startGame();
+	}
+
+	else if (userScore >= computerNumber) {
+		losses++;
+		alert("Game over! Loser!");
+		startGame();
+
+	}
+
+};
 
 
 $("#minion1").on("click", function() {
-
-	userScore += minionValue1;
-
-	$("#userScore").text(userScore);
-
+	
+	keepScore(minionValue1);
 	$(this).animate({top: "510px"}, 100);	
-	$(this).animate({top: "525px"}, 100);	
-
-	if (userScore === computerNumber) {
-		wins++;
-		alert("You Win!! ={D");
-		startGame();
-	}
-
-	else if (userScore >= computerNumber) {
-		losses++;
-		alert("Game over! Loser!");
-		startGame();
-
-	}
-
+	$(this).animate({top: "525px"}, 100);
 
 });
+
 
 $("#minion2").on("click", function() {
 
-	userScore += minionValue2;
-
-	$("#userScore").text(userScore);
-
+	keepScore(minionValue2);
 	$(this).animate({top: "520px"}, 100);	
 	$(this).animate({top: "535px"}, 100);	
 
-	if (userScore === computerNumber) {
-		wins++;
-		alert("You Win!! ={D");
-		startGame();
-	}
-
-	else if (userScore >= computerNumber) {
-		losses++;
-		alert("Game over! Loser!");
-		startGame();
-
-	}
-
-
 });
+
 
 $("#minion3").on("click", function() {
-
-	userScore += minionValue3;
-
-	$("#userScore").text(userScore);
-
+	
+	keepScore(minionValue3);
 	$(this).animate({top: "520px"}, 100);	
 	$(this).animate({top: "535px"}, 100);	
 
-	if (userScore === computerNumber) {
-		wins++;
-		alert("You Win!! ={D");
-		startGame();
-	}
-
-	else if (userScore >= computerNumber) {
-		losses++;
-		alert("Game over! Loser!");
-		startGame();
-
-	}
-
-
-
 });
 
+
 $("#minion4").on("click", function() {
-
-	userScore += minionValue4;
-
-	$("#userScore").text(userScore);
-
+	
+	keepScore(minionValue3);
 	$(this).animate({top: "510px"}, 100);	
 	$(this).animate({top: "525px"}, 100);	
-
-	if (userScore === computerNumber) {
-		wins++;
-		alert("You Win!! ={D");
-		startGame();
-	}
-
-	else if (userScore >= computerNumber) {
-		losses++;
-		alert("Game over! Loser!");
-		startGame();
-
-	}
 
 });
