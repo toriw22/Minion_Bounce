@@ -16,6 +16,6 @@ How to play:
 
    * The game restarts whenever the player wins or loses.
 
-   * When the game begins again, the player will see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+   * When the game begins again, the player will see a new random number. Also, all the minions will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
 
    * The app also shows the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
